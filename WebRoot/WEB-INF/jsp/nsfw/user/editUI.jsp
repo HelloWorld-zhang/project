@@ -17,12 +17,13 @@
             <td class="tdBg" width="200px">所属部门：</td>
             <td><s:select name="user.dept" list="#{'部门A':'部门A','部门B':'部门B' }"/></td>
         </tr>
-        <tr>
+         <tr>
             <td class="tdBg" width="200px">头像：</td>
             <td>
-                
-                    <img src="" width="100" height="100"/>
-                
+                <s:if test="%{user.headImg != null && user.headImg != ''}">
+                    <img src="${basePath }upload/<s:property value='user.headImg'/>" width="100" height="100"/>
+                    <s:hidden name="user.headImg"/>
+                </s:if>
                 <input type="file" name="headImg"/>
             </td>
         </tr>
