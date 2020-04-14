@@ -57,7 +57,7 @@ public class UserServiceImpl implements UserService {
 		return userDao.findObjects();
 	}
 
-	//到处用户列表
+	//到出用户列表
 	@Override
 	public void exportExcel(List<User> userList, ServletOutputStream outputStream) {
 		 ExcelUtil.exportUserExcel(userList, outputStream);
@@ -128,6 +128,12 @@ public class UserServiceImpl implements UserService {
 			e.printStackTrace();
 		}
 		
+	}
+
+	@Override
+	public List<User> findUserByAccountAndId(String id, String account) {
+		
+		return userDao.findUserByAccountAndId(id, account);
 	}
 
 }
