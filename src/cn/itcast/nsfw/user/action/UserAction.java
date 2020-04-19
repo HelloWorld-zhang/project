@@ -48,7 +48,7 @@ public class UserAction extends ActionSupport {
 		return "addUI";
 	}
 
-	// 保存新增
+	// 保存新增 图片
 	public String add() {
 		try {
 			if (user != null) {

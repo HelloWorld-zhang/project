@@ -5,7 +5,7 @@
     <title>用户管理</title>
     <script type="text/javascript" src="${basePath }js/datepicker/WdatePicker.js"></script>
     <script type="text/javascript">
-    var vResult = false;
+        var vResult = false;
     	//校验帐号唯一
     	function doVerify(){
     		//1、获取帐号
@@ -124,7 +124,7 @@
     </table>
     <s:hidden name="user.id"/>
     <div class="tc mt20">
-        <input type="submit" class="btnB2" value="保存" onclick="doSubmit()"/>
+        <input type="button" class="btnB2" value="保存" onclick="doSubmit()"/>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <input type="button"  onclick="javascript:history.go(-1)" class="btnB2" value="返回" />
     </div>

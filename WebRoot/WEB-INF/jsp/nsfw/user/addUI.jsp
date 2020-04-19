@@ -9,7 +9,7 @@
 		
 		function doVerify(){
 			var account = $("#account").val();
-			if(account != null){
+			if(account != ""){
 				$.ajax({
 					url:"${basePath}nsfw/user_verifyAccount.action",
 					data:{"user.account":account},
@@ -113,7 +113,7 @@
         </tr>
     </table>
     <div class="tc mt20">
-        <input type="submit" class="btnB2" value="保存" onclick="doSubmit()"/>
+        <input type="button" class="btnB2" value="保存" onclick="doSubmit()"/>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <input type="button"  onclick="javascript:history.go(-1)" class="btnB2" value="返回" />
     </div>
