@@ -39,5 +39,6 @@
 	<include file="cn/itcast/test/conf/test-struts.xml"></include>
 	<!-- 包含用户管理的struts配置文件 -->
 	<include file="cn/itcast/nsfw/user/conf/user-struts.xml"></include>
-
+	<!-- 包含角色管理的Struts配置文件 -->
+	<include file="cn/itcast/nsfw/role/conf/role-struts.xml"></include>
 </struts>
