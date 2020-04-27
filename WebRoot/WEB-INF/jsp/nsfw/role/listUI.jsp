@@ -67,7 +67,7 @@
                                 <td align="center"><input type="checkbox" name="selectedRow" value="<s:property value='roleId'/>"/></td>
                                 <td align="center"><s:property value="name"/></td>
                                 <td align="center">
-                                	<s:iterator value="rolePrivileges">
+                                	<s:iterator value="rolePrivilege">
                                 		<s:property value="#privilegeMap[id.code]"/>
                                 	</s:iterator>	
                                 </td>
